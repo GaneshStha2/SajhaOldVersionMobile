@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Views.SignUploadPhotoAndSuccessView"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="0">
+            <StackLayout>
+                <Frame Style="{StaticResource NavigationTopLarge}" Padding="0,400,0,0" CornerRadius="30" BackgroundColor="#56C596"   >
+
+                    
+                </Frame>
+                <Image Source="SignupSuccessBackbround.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Opacity="0.5" Margin="0,-350,0,0"></Image>
+                <StackLayout Margin="0,-220,0,0">
+                    <Label Text="Congratulations!" Style="{StaticResource PrimaryTitleLableLarge}"  FontSize="18" TextColor="White" ></Label>
+                    <Label Text="You are clean"  Style="{StaticResource PrimaryTitleLableLarge}" FontSize="18" TextColor="White" Margin="0,-5,0,0"></Label>
+                    <Frame Margin="40,40,40,0" CornerRadius="21" Padding="0" >
+                        <Grid  Style="{StaticResource ActionButtonRow}" Margin="0" Padding="15,5,30,15" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackLayout Style="{StaticResource HomeActionInformationRow}"  Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" Margin="0,5,0,0" VerticalOptions="Center" >
+                                <Label FontSize="12" Style="{StaticResource LabelBold}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" LineBreakMode="TailTruncation" TextColor="{StaticResource PrimaryColor}" Text="{Binding SignUpViewModel.FullName}"  ></Label>
+                                <Label  Style="{StaticResource LabelDim}" Margin="0,-5,0,0" VerticalTextAlignment="Center" TextColor="{StaticResource PrimaryLableColor}" FontFamily="MontserratSemiBold"  LineBreakMode="TailTruncation" FontSize="10" Text="{Binding SignUpViewModel.EmailAddress}"  ></Label>
+                            </StackLayout>
+
+                            <Button x:Name="CameraImage" IsVisible="True" Style="{StaticResource EntryImage}" Clicked="UploadImage_Clicked"  HeightRequest="30" WidthRequest="30" BackgroundColor="White" VerticalOptions="Center" Margin="0,5,0,0" Grid.Row="0" Grid.Column="2"   ImageSource="SignupSuccessCameraIcon.png"></Button>
+                            <!--<Frame x:Name="PhotoFrame" VerticalOptions="Center"  BorderColor="Gray" Grid.Row="0" HeightRequest="20" Margin="0,-20,0,0" IsVisible="True" Padding="0" WidthRequest="20" CornerRadius="50" Grid.Column="2" BackgroundColor="White">
+                                <Image x:Name="img" Source="SignupSuccessBackbround.png" ></Image>
+                            </Frame>-->
+                            <Frame  x:Name="PhotoFrame" Padding="0" IsVisible="False" HeightRequest="30" WidthRequest="30"  BorderColor="Black"  HorizontalOptions="CenterAndExpand" BackgroundColor="White" CornerRadius="100" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" Margin="0,6,-15,-6"  >
+                                <Image x:Name="img" Source="SignupSuccetssBackbround.png" ></Image>
+                            </Frame>
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+                </StackLayout>
+
+            <Button VerticalOptions="End" Margin="0,100,0,0" Clicked="TurnOnNotification_Clicked" BackgroundColor="White" Text="Turn On Notification for Instant Update" TextColor="{StaticResource SecondaryLableColor}"></Button>
+
+
+            <Button  Text="Done" Clicked="RegisterButton_Clicked" Style="{StaticResource ButtonPrimarySubmit}"  Margin="40,40,40,40"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

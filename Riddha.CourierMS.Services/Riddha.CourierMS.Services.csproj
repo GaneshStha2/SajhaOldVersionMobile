@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Riddha.CourierMS.Common.Services\Riddha.CourierMS.Common.Services.csproj" />
+    <ProjectReference Include="..\Riddha.CourierMS.Model\Riddha.CourierMS.Model.csproj" />
+  </ItemGroup>
+
+</Project>

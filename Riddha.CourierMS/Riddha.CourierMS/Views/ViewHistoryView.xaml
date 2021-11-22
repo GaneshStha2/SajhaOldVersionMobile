@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Views.ViewHistoryView"
+             Shell.BackgroundColor="{StaticResource PrimaryColorLight}">
+    <ContentPage.Content>
+        <StackLayout >
+
+            <Frame  Style="{StaticResource NavigationTopSmall}">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                    <Label Style="{StaticResource NavigationPageTitleLabel}" Text="View History"  ></Label>
+                </StackLayout>
+            </Frame>
+            <ListView Margin="20,0,30,0" IsVisible="False" ItemTapped="RecentTransactionStack_ItemTapped"  SelectionMode="None" SeparatorColor="White" x:Name="RecentTransactionStack" HasUnevenRows="True" HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout >
+                                <Grid  VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image
+                                                    Style="{StaticResource HomeActionImage}"
+                                                       VerticalOptions="Center"
+                                                       HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                                       Source="HomeRecentTransLocationIcon.png" >
+
+                                    </Image>
+
+                                    <StackLayout 
+                                                Style="{StaticResource HomeActionInformationRow}"
+                                                VerticalOptions="Center" >
+
+                                        <Label Style="{StaticResource LabelDim}"
+                                               TextColor="Black"
+                                                           Margin="0,5,0,0" 
+                                                           Text="{Binding DocumentTypeName }" >
+                                        </Label>
+                                        <Label
+                                                        Style="{StaticResource LabelBold}"
+                                                        Margin="0,-5,0,0" 
+                                                        Text="{Binding RecipientOrSenderName}">
+                                        </Label>
+
+                                        <Label 
+                                                        Style="{StaticResource LabelDim}" 
+                                               TextColor="Black"
+                                                        Margin="0,-5,0,0"
+                                                        Text="{Binding SendOrReceiveAddress }">
+
+                                        </Label>
+
+                                       
+
+                                    </StackLayout>
+
+                                    <Button 
+                                                Style="{StaticResource HomeActionButton}" 
+                                                VerticalOptions="Center" 
+                                                Text="Track" 
+                                                BackgroundColor="#CDB3D4" 
+                                                BorderColor="Gray"
+                                                TextColor="White"
+                                        CommandParameter="{Binding TransactionId}"
+                                        Clicked="TrackButton_Clicked">
+                                    </Button>
+
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout x:Name="NoListFound" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="No Recent Booking Found..." HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Medium" FontAttributes="Bold" FontFamily="MontserratSemiBold"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

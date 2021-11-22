@@ -1,0 +1,36 @@
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.deps.json
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csprojAssemblyReference.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.AssemblyInfoInputs.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.AssemblyInfo.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csproj.CoreCompileInputs.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csproj.CopyComplete
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.deps.json
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csprojAssemblyReference.cache
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.AssemblyInfoInputs.cache
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.AssemblyInfo.cs
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csproj.CoreCompileInputs.cache
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csproj.CopyComplete
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.deps.json
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\bin\Debug\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csprojAssemblyReference.cache
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csproj.CoreCompileInputs.cache
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.AssemblyInfoInputs.cache
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.AssemblyInfo.cs
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.csproj.CopyComplete
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\Umesh\100 SVN Project\CourierMsmobile\trunk\Riddha.CourierMS.DB\obj\Debug\netstandard2.0\Riddha.CourierMS.DB.pdb

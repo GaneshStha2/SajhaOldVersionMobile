@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices;assembly=Riddha.CourierMS" 
+            BackgroundColor="White" 
+             x:Class="Riddha.CourierMS.Views.ReceiverSelectionView">
+    <ContentPage.Content>
+            <StackLayout>
+
+                <Frame  Style="{StaticResource NavigationTopSmall}" >
+
+                    <StackLayout 
+                    Orientation="Horizontal">
+
+                        <ImageButton 
+                        Style="{StaticResource NavigationBarBackButton}" 
+                        Clicked="BackButton_Clicked"
+                        Source="Back.png" >
+
+                        </ImageButton>
+
+                        <Label 
+                        Style="{StaticResource NavigationPageTitleLabel}"
+                        Text="Receiver Information"  >
+                        </Label>
+
+                    </StackLayout>
+
+
+                </Frame>
+
+
+                <Image Style="{StaticResource ImageStep}" Source="ProgressStepThree.png"></Image>
+
+
+
+        <ScrollView>
+                <StackLayout 
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="Start" 
+                Padding="30,10,30,0" 
+                BackgroundColor="White" >
+
+
+                    <!--<ScrollView>-->
+                    <Frame 
+                        Style="{StaticResource EntryFrame}" 
+                        Margin="0,10,0,0"
+                        Padding="15,12"
+                        BorderColor="{StaticResource BoarderofScanner}">
+
+                        <Frame.GestureRecognizers>
+
+                            <TapGestureRecognizer 
+                                Tapped="SelectReceiverTapGestureRecognizer_Tapped">
+                            </TapGestureRecognizer>
+
+                        </Frame.GestureRecognizers>
+
+                        <StackLayout>
+
+                            <StackLayout 
+                                Orientation="Horizontal" 
+                                IsVisible="True" 
+                                x:Name="beforeReceiverSelectionGrid">
+
+                                <Label  
+                                    HorizontalOptions="Fill"
+                                    FontSize="15" Text="Select Receiver" 
+                                    Style="{StaticResource LocalEntry}">
+                                </Label>
+
+                                <Image 
+                                    Style="{StaticResource EntryImage}" 
+                                    HeightRequest="12"
+                                    WidthRequest="12"
+                                    HorizontalOptions="EndAndExpand" 
+                                    Source="DownPathIcon.png" >
+
+                                </Image>
+                            </StackLayout>
+
+                            <StackLayout 
+                                Orientation="Horizontal" 
+                                IsVisible="False" 
+                                x:Name="afterReceiverSelectionGrid">
+
+                                <Label 
+                                    HorizontalOptions="Fill"
+                                    FontSize="15" 
+                                    Text="{Binding ParcelDispatch.LocationName}" 
+                                    Style="{StaticResource LocalEntry}">
+                                </Label>
+
+                                <Image 
+                                    Style="{StaticResource EntryImage}" 
+                                     HeightRequest="12"
+                                    WidthRequest="12"
+                                    HorizontalOptions="EndAndExpand" 
+                                    Source="DownPathIcon.png" >
+
+                                </Image>
+
+                            </StackLayout>
+
+
+
+                        </StackLayout>
+
+
+                    </Frame>
+                    <!--</ScrollView>-->
+
+
+                    <StackLayout Margin="0,10,0,0">
+
+
+                            <Frame 
+                                Margin="0,10,0,10"
+                            Style="{StaticResource EntryFrame}"
+                                
+                            x:Name="ReceiverNameFrame">
+
+                                <StackLayout 
+                                Orientation="Horizontal">
+
+                                    <local:TextBoarderlessEntry 
+                                    ReturnType="Next" x:Name="ReceiverNameEntry" 
+                                    Text="{Binding Booking.ReceiverName}" 
+                                    Placeholder="Receiver Name" 
+                                    Focused="ReceiverNameEntry_Focused" 
+                                    TextChanged="ReceiverNameText_Changed"
+                                    Unfocused="ReceiverNameEntry_UnFocused"
+                                    Style="{StaticResource LocalEntry}">
+                                    </local:TextBoarderlessEntry>
+
+
+                                    <Image 
+                                    Style="{StaticResource EntryImage}" 
+                                    x:Name="FullNameSucessIndicator"
+                                    IsVisible="False" 
+                                    Source="SuccessIndicatior.png" >
+
+                                    </Image>
+
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame 
+                            Style="{StaticResource EntryFrame}" 
+                                 Margin="0,10,0,10"
+                            x:Name="ReceiverEmailFrame">
+
+                                <StackLayout 
+                                Orientation="Horizontal">
+
+                                    <local:TextBoarderlessEntry 
+                                    ReturnType="Next" 
+                                    x:Name="ReceiverEmailEntry" 
+                                    Text="{Binding Booking.ReceiverEmail}"
+                                    Placeholder="Email Address"
+                                    Focused="ReceiverEmailEntry_Focused" 
+                                    TextChanged="EmailAddressText_Changed" 
+                                    Unfocused="ReceiverEmailEntry_UnFocused" 
+                                    Style="{StaticResource LocalEntry}">
+
+                                    </local:TextBoarderlessEntry>
+
+                                    <Image 
+                                    Style="{StaticResource EntryImage}" 
+                                    x:Name="EmailSucessIndicator"  
+                                    IsVisible="False" 
+                                    Source="SuccessIndicatior.png" >
+
+                                    </Image>
+                                </StackLayout>
+                            </Frame>
+
+
+                            <Frame 
+                            Style="{StaticResource EntryFrame}"
+                                 Margin="0,10,0,10"
+                            x:Name="ReceiverContactFrame">
+
+                                <StackLayout 
+                                Orientation="Horizontal">
+
+                                    <local:TextBoarderlessEntry 
+                                    Keyboard="Numeric"
+                                    ReturnType="Next"
+                                    x:Name="ReceiverContactEntry"
+                                    Text="{Binding Booking.ReceiverContact}" 
+                                    Placeholder="Mobile Number" 
+                                    Focused="ReceiverContactEntry_Focused"
+                                    TextChanged="ReceiverContactText_Changed" 
+                                    Unfocused="ReceiverContactEntry_UnFocused"
+                                    Style="{StaticResource LocalEntry}">
+                                    </local:TextBoarderlessEntry>
+
+                                    <Image 
+                                    Style="{StaticResource EntryImage}" 
+                                    x:Name="MobileNumberIndicator" 
+                                    IsVisible="False" 
+                                    Source="SuccessIndicatior.png" >
+
+                                    </Image>
+
+                                </StackLayout>
+                            </Frame>
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+        </ScrollView>
+
+                <Button 
+                x:Name="Next" 
+                Text="Next" 
+                Clicked="NextButton_Clicked"
+                Style="{StaticResource ButtonPrimarySubmit}" 
+                Margin="40,30,40,40"/>
+
+            </StackLayout>
+     
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Resources.DesignComponent.ComponentView">
+    <ContentPage.Content>
+       
+            <StackLayout>
+            <Frame  Style="{StaticResource NavigationTopLarge}" >
+                    <StackLayout>
+                        <Label Style="{StaticResource PrimaryTitleLableLarge}" Text="Sajha Courier"/>
+                        <Label Style="{StaticResource SecondaryTitleLableSmall}" Margin="0,5,0,0" Text="Sign up! online tracking System"/>
+                    </StackLayout>
+                </Frame>
+            
+                <ScrollView>
+                <StackLayout>
+                    <Button  Text="LOG IN" Style="{StaticResource ButtonPrimarySubmit}" />
+                    <StackLayout Style="{StaticResource HomeButtonStack}" >
+                        <Button  Text="View History"  Style="{StaticResource HomeButtonBlue}" />
+                        <Button  Text="View Your Profile"  Style="{StaticResource HomeButtonGreen}" />
+                    </StackLayout>
+
+
+                    <Grid  Style="{StaticResource ActionButtonRow}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="6"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource HomeActionImage}"  Source="DispatchParcel.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                            <Label Style="{StaticResource LabelBold}" Text="Receive Parcel"  ></Label>
+                            <Label Style="{StaticResource LabelDim}" Text="Click Here To Receive Parcel."  ></Label>
+                        </StackLayout>
+
+                        <Button Style="{StaticResource HomeActionButton}" Text="OK" BackgroundColor="{StaticResource DangerColor}"></Button>
+
+                    </Grid>
+                    <BoxView Style="{StaticResource ListviewDivider}" ></BoxView>
+                    <Label Style="{StaticResource ListViewTitle}" Text="Delivery Location" ></Label>
+
+                    <Grid  Style="{StaticResource ListViewLocation}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource ListViewImage}"  Source="Location.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                            <Label Style="{StaticResource LabelBold}" Text="Pokhara"  ></Label>
+                        </StackLayout>
+
+                        <RadioButton  Style="{StaticResource ListViewRadio}"></RadioButton>
+                    </Grid>
+
+                    <Label Style="{StaticResource ListViewTitle}" Text="Received List" ></Label>
+                    <Grid  Style="{StaticResource ListViewParcelList}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource ListViewImage}"  Source="parcelicon1.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                            <Label Style="{StaticResource LabelBold}" Text="KTM0012458"  ></Label>
+                            <Label Style="{StaticResource LabelBold}" Text="TO"  ></Label>
+                            <StackLayout Orientation="Horizontal" Margin="20,0,0,0" HorizontalOptions="FillAndExpand" >
+                                <Label Style="{StaticResource LabelDim}" Text="For"  ></Label>
+                                <Label Style="{StaticResource LabelDim}" Text="Kathmandu Anamnagar"  ></Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Margin="20,0,0,0" HorizontalOptions="FillAndExpand" >
+                                <Label Style="{StaticResource LabelDim}" Text="Binod Sapkota"  ></Label>
+                                <Label Style="{StaticResource LabelDim}" Text="9860789428"  ></Label>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </Grid>
+                    <BoxView Style="{StaticResource ListviewDivider}" Margin="30,5,30,0" ></BoxView>
+                    <Button  Text="Next Page" Clicked="Button_Clicked" Style="{StaticResource ButtonPrimarySubmit}" />
+                </StackLayout>
+        </ScrollView>
+                <Frame Margin="40,-560,40,0" Padding="0"  HasShadow="False" CornerRadius="21" >
+                    <Grid  Style="{StaticResource ActionButtonRow}" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="6"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <!--<ColumnDefinition Width="0.2*"></ColumnDefinition>-->
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource HomeActionImage}"  Source="DispatchParcel.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" Margin="20,0,0,0"  >
+                            <Label Style="{StaticResource LabelBold}" Text="National"  ></Label>
+                            <Label Style="{StaticResource LabelDim}" Text="Book for national destination"  ></Label>
+                        </StackLayout>
+
+                        <!--<Button Style="{StaticResource HomeActionButton}" Text="OK" BackgroundColor="{StaticResource DangerColor}"></Button>-->
+
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

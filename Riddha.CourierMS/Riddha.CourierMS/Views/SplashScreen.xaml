@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Views.SplashScreen"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="unitedsajha.jpg" WidthRequest="250"></Image>
+            <ActivityIndicator x:Name="Busy" IsRunning="False" Color="{StaticResource PrimaryColor}" ></ActivityIndicator>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Riddha.CourierMS.Views.BookingSuccessfulView">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" Padding="10" VerticalOptions="CenterAndExpand">
+
+            <Image 
+                Source="BookingSuccessTickIcon.png"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" HeightRequest="100"> 
+            </Image>
+
+            <Label
+                HorizontalOptions="CenterAndExpand" 
+                TextColor="Black"
+                FontSize="Large"
+                x:Name="MessageHead"
+                Margin="0,20,0,0">
+            </Label>
+            
+            <Label 
+                HorizontalOptions="CenterAndExpand" 
+                TextColor="{StaticResource PrimaryColor}" 
+                FontSize="Medium" 
+                x:Name="MessageBody"
+                Margin="0,-5,0,0">
+            </Label>
+
+
+            <Button  Text="Try Another Booking" Clicked="NextButton_Clicked" Style="{StaticResource ButtonPrimaryOutLine}" />
+
+            <Button  x:Name="Home" Text="Home" Clicked="Home_Clicked" Style="{StaticResource ButtonPrimaryOutLine}" TextColor="White" BackgroundColor="{StaticResource PrimaryColor}" />
+
+            <!--<Button 
+                CornerRadius="30"  
+                x:Name="ContinueBtn"
+                Clicked="ContinueBtn_Clicked"
+                BackgroundColor="{StaticResource PrimaryColor}" 
+                HorizontalOptions="FillAndExpand"
+                Margin="30,30,30,20"  Padding="15"   Text="Complete" TextColor="White"  FontSize="Medium">
+            </Button>-->
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

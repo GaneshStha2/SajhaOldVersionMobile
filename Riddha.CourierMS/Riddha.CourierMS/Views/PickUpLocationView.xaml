@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices"
+             mc:Ignorable="d"
+             x:Class="Riddha.CourierMS.Views.PickUpLocationView">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="White">
+
+            <Frame  Style="{StaticResource NavigationTopSmall}">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                    <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Location Information"  ></Label>
+                </StackLayout>
+            </Frame>
+
+            <Image Style="{StaticResource ImageStep}" Source="ProgressStepOne.png" ></Image>
+            <ScrollView>
+                <StackLayout 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="Start"
+                    Padding="30,0,30,0" 
+                    BackgroundColor="White" >
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="0,20,0,0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="PickUpLocationLable_Tabbed"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                            <Label 
+                                x:Name="PickuplocationText"
+                        Style="{StaticResource LabelBold}"
+                                LineBreakMode="TailTruncation"
+                            HorizontalOptions="StartAndExpand"
+                        FontFamily="MontserratSemiBold"
+                        FontSize="15" Margin="0,5,0,0" 
+                        Text="Pick Up Location:"  >
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="PickUpLocationLable_Tabbed"></TapGestureRecognizer>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        <Image Source="DownPathIcon.png" x:Name="DownPathIcon" HorizontalOptions="EndAndExpand" WidthRequest="20">
+                            
+                        </Image>
+                            
+                    </StackLayout>
+                   
+                        <ListView 
+                    x:Name="BranchList"
+                            SeparatorColor="White"
+                    VerticalOptions="Start"
+                            HeightRequest="300"
+                            
+                            SelectionMode="None"
+                    Margin="0,20,0,0" 
+                    HasUnevenRows="True" 
+                    ItemsSource="{Binding BranchList}">
+
+                            <ListView.ItemTemplate >
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Frame Padding="0">
+                                            <StackLayout>
+                                                <Grid  Style="{StaticResource ActionButtonRow}" Margin="0,10,0,0">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                        <RowDefinition Height="6"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <Image Style="{StaticResource HomeActionImage}"
+                                                           HorizontalOptions="Center"  
+                                                           Source="LocationListViewIcon.png"
+                                                           HeightRequest="35" 
+                                                           VerticalOptions="CenterAndExpand" >
+                                                        
+                                                    </Image>
+
+                                                    <StackLayout 
+                                                        Style="{StaticResource HomeActionInformationRow}" >
+                                                        <Label 
+                                                            Style="{StaticResource LabelBold}" 
+                                                            VerticalTextAlignment="Center" 
+                                                            VerticalOptions="CenterAndExpand" 
+                                                            HorizontalOptions="Start" 
+                                                            Text="{Binding Name}" 
+                                                            LineBreakMode="TailTruncation">
+                                                            
+                                                        </Label>
+                                                    </StackLayout>
+
+                                                    <RadioButton 
+                                                        IsChecked="{Binding Checked}"
+                                                        GroupName="List" 
+                                                        CheckedChanged="RadioButton_CheckedChanged"
+                                                        Grid.Column="2" 
+                                                        Grid.Row="0" 
+                                                        CommandParameter="{Binding Id}" 
+                                                        Style="{StaticResource ListViewRadio}">
+                                                        
+                                                    </RadioButton>
+                                                </Grid>
+                                                <BoxView 
+                                                    Style="{StaticResource ListviewDivider}"  
+                                                    Margin="30,5,30,0" >
+                                                    
+                                                </BoxView>
+
+                                            </StackLayout>
+                                          
+                                        </Frame>
+
+                                    </ViewCell>
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    <StackLayout Margin="0">
+                        <Label  Style="{StaticResource LabelBold}"  FontFamily="MontserratSemiBold" FontSize="15" Margin="0,5,0,0" Text="Street Address"  ></Label>
+                        <Frame Style="{StaticResource StreetEntryFrame}" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" Padding="0"  Margin="0,5,0,0">
+                                <local:TextBoarderlessEntry  HorizontalOptions="Fill" VerticalOptions="StartAndExpand"   x:Name="StreetAddressEntry" Style="{StaticResource SteetEntry}" FontSize="Small" Text="{Binding Booking.FromStreetAddress}"></local:TextBoarderlessEntry>
+                        </Frame>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+                    <Button x:Name="Next" Text="Next" Clicked="NextButton_Clicked" Style="{StaticResource ButtonPrimarySubmit}"  Margin="30,30,30,40"/>
+
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

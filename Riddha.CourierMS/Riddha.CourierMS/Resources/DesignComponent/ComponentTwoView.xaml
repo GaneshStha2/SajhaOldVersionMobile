@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Resources.DesignComponent.ComponentTwoView"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame  Style="{StaticResource NavigationTopSmall}" >
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                        <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Payment"  ></Label>
+                    </StackLayout>
+                </Frame>
+
+                <Image Source="MobileImage.png" Margin="0,40,0,0" WidthRequest="225" HeightRequest="487.2"></Image>
+                <Image Source="Mask.png" Margin="0,-350,0,0" WidthRequest="414" HeightRequest="487.2"></Image>
+                <Frame Margin="40,-560,40,0" Padding="0"  HasShadow="False" CornerRadius="21" >
+                    <Grid  Style="{StaticResource ActionButtonRow}" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="6"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <!--<ColumnDefinition Width="0.2*"></ColumnDefinition>-->
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource HomeActionImage}"  Source="DispatchParcel.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" Margin="20,0,0,0"  >
+                            <Label Style="{StaticResource LabelBold}" Text="National"  ></Label>
+                            <Label Style="{StaticResource LabelDim}" Text="Book for national destination"  ></Label>
+                        </StackLayout>
+
+                        <!--<Button Style="{StaticResource HomeActionButton}" Text="OK" BackgroundColor="{StaticResource DangerColor}"></Button>-->
+
+                    </Grid>
+                </Frame>
+                <Frame Margin="40,10,40,0" Padding="0" HasShadow="False" CornerRadius="21" >
+                    <Grid  Style="{StaticResource ActionButtonRow}" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="6"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <!--<ColumnDefinition Width="0.2*"></ColumnDefinition>-->
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource HomeActionImage}"  Source="DispatchParcel.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" Margin="20,0,0,0"  >
+                            <Label Style="{StaticResource LabelBold}" Text="InterNational"  ></Label>
+                            <Label Style="{StaticResource LabelDim}" Text="Book for national destination"  ></Label>
+                        </StackLayout>
+
+                        <!--<Button Style="{StaticResource HomeActionButton}" ImageSource="" BackgroundColor="{StaticResource DangerColor}"></Button>-->
+
+                    </Grid>
+                </Frame>
+
+
+            </StackLayout>
+        </ScrollView>
+      
+    </ContentPage.Content>
+</ContentPage>

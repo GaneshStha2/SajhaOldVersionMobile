@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="White"
+             x:Class="Riddha.CourierMS.Views.BookingView">
+    <ContentPage.Content>
+     
+            <StackLayout>
+                <Frame  Style="{StaticResource NavigationTopSmall}" >
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                    </StackLayout>
+                </Frame>
+            <ScrollView>
+                <StackLayout  
+                Style="{StaticResource NavigationTopLarge}"
+                Padding="0"
+                BackgroundColor="White" 
+                Margin="0,40,0,20">
+                    <StackLayout HorizontalOptions="CenterAndExpand" >
+                        <Label 
+                        Style="{StaticResource PrimaryTitleLableLarge} "
+                        FontSize="17"
+                        Text="We have"/>
+                        <Label 
+                        Style="{StaticResource PrimaryTitleLableLarge}"
+                        FontSize="17"
+                        Text="National And International"/>
+                        <Label 
+                        Style="{StaticResource PrimaryTitleLableLarge} "
+                        FontSize="17"
+                        Text="Services"/>
+                    </StackLayout>
+
+
+                    <Image Source="MobileImage.png" Margin="0,40,0,0" WidthRequest="225" HeightRequest="487.2"></Image>
+                    <Image Source="Mask.png" Margin="0,-400,0,0" WidthRequest="414" HeightRequest="487.2"></Image>
+
+
+
+                    <Frame x:Name="NationalFrame" Margin="30,-550,30,0" Padding="0" IsClippedToBounds="True" BackgroundColor="White" HasShadow="True" CornerRadius="21" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="NationalTapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <Grid  Style="{StaticResource ActionButtonRow}" Padding="0" Margin="20,20,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="6"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                <!--<ColumnDefinition Width="0.2*"></ColumnDefinition>-->
+                            </Grid.ColumnDefinitions>
+
+                            <Image Style="{StaticResource HomeActionImage}"   Source="BookingNationalIcon.png" ></Image>
+
+                            <StackLayout Style="{StaticResource HomeActionInformationRow}" Margin="10,0,0,0"  >
+                                <Label Style="{StaticResource LabelBold}" Text="National"  ></Label>
+                                <Label Style="{StaticResource LabelDim}" Margin="0,-5,0,0" Text="Book for national destination"  ></Label>
+                            </StackLayout>
+
+                            <!--<Button Style="{StaticResource HomeActionButton}" Text="OK" BackgroundColor="{StaticResource DangerColor}"></Button>-->
+
+                        </Grid>
+                    </Frame>
+
+
+
+                    <Frame x:Name="InternationalFrame" Margin="30,20,30,0" Padding="0"  BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" CornerRadius="21" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="InterNationalTapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <Grid  Style="{StaticResource ActionButtonRow}" Padding="0"  Margin="20,20,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="6"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                <!--<ColumnDefinition Width="0.2*"></ColumnDefinition>-->
+                            </Grid.ColumnDefinitions>
+
+                            <Image Style="{StaticResource HomeActionImage}"  Source="BookingInternationalIcon.png" ></Image>
+
+                            <StackLayout Style="{StaticResource HomeActionInformationRow}" Margin="10,0,0,0"  >
+                                <Label Style="{StaticResource LabelBold}"  Text="International"  ></Label>
+                                <Label Style="{StaticResource LabelDim}" Margin="0,-5,0,0" Text="Book for international destination"  ></Label>
+                            </StackLayout>
+
+
+                        </Grid>
+                    </Frame>
+
+                    <StackLayout Margin="10,20,10,40">
+                        <Grid  Style="{StaticResource ActionButtonRow}"   Margin="10,10,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="6"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Style="{StaticResource HomeActionImage}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Source="BookingTickIcon.png"  ></Image>
+
+                            <Label Style="{StaticResource LabelBold}" Grid.Row="0" Grid.Column="1" FontFamily="MontserratRegular" FontSize="15" Text="You can track your booking"  ></Label>
+
+
+                        </Grid>
+                        <BoxView Style="{StaticResource ListviewDivider}"></BoxView>
+
+
+                        <Grid  Style="{StaticResource ActionButtonRow}" Margin="10,10,10,0" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="6"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Style="{StaticResource HomeActionImage}" VerticalOptions="CenterAndExpand" HeightRequest="24" Source="BookingTickIcon.png"  ></Image>
+
+                            <Label Style="{StaticResource LabelBold}" Grid.Row="0" Grid.Column="1" FontFamily="MontserratRegular" FontSize="15" Text="Our Pickup service will visit and verify"  ></Label>
+
+
+                        </Grid>
+                        <BoxView Style="{StaticResource ListviewDivider}"></BoxView>
+
+
+                        <Grid  Style="{StaticResource ActionButtonRow}"   Margin="10,10,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="6"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Style="{StaticResource HomeActionImage}" VerticalOptions="CenterAndExpand" HeightRequest="24" Source="BookingTickIcon.png"  ></Image>
+
+                            <Label Style="{StaticResource LabelBold}" Grid.Row="0" Grid.Column="1" FontFamily="MontserratRegular" FontSize="15" Text="Auto update of courier process and delivery"></Label>
+
+
+                        </Grid>
+                        <BoxView Style="{StaticResource ListviewDivider}"></BoxView>
+
+
+                    </StackLayout>
+
+
+                </StackLayout>
+
+
+
+        </ScrollView>
+            </StackLayout>
+     
+    </ContentPage.Content>
+</ContentPage>

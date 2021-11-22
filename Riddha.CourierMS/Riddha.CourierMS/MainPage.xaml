@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.MainPage"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout>
+
+
+            <Frame  Style="{StaticResource NavigationTopLarge}" >
+                <StackLayout>
+                    <Label Style="{StaticResource PrimaryTitleLableLarge}" Text="Sajha Courier"/>
+                    <Label Style="{StaticResource SecondaryTitleLableSmall}" Margin="0,5,0,0" Text="Sign up! Online tracking System"/>
+                </StackLayout>
+            </Frame>
+            <Image Source="MainPageImageOne.png" Margin="0,20,0,0" ></Image>
+
+            <StackLayout Style="{StaticResource ImageSliderStack}" >
+                <Frame 
+                    BackgroundColor="{StaticResource PrimaryColor}" 
+                    Style="{StaticResource ImageSliderFrame}" >
+                    
+                </Frame>
+                <Frame BackgroundColor="LightGray" Margin="5,0,0,0" Style="{StaticResource ImageSliderFrame}" ></Frame>
+                <Frame BackgroundColor="LightGray" Margin="5,0,0,0" Style="{StaticResource ImageSliderFrame}" ></Frame>
+                <Frame BackgroundColor="LightGray" Margin="5,0,0,0" Style="{StaticResource ImageSliderFrame}" ></Frame>
+            </StackLayout>
+
+            <Label Style="{StaticResource PrimaryTitleLableLarge}" Margin="0,20,0,0" Text="Get Started"/>
+            <StackLayout Style="{StaticResource HomeButtonStack}" Margin="0,20,0,0" HorizontalOptions="CenterAndExpand">
+                <Button  Text="CUSTOMER"  Style="{StaticResource HomeButtonBlue}" Clicked="CustomerButtton_Clicked" Padding="30,0,30,0" />
+                <Button  Text="SAJHA USER" 
+                         Margin="10,0,0,0"  
+                         Padding="30,0,30,0"  
+                         Clicked="ShajhaUserButtton_Clicked" 
+                         Style="{StaticResource HomeButtonGreen}" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal" Margin="0,40,0,40" >
+
+                <Label Style="{StaticResource SecondaryTitleLableSmall}"  x:Name="AlreadyHaveAnAccount"  VerticalTextAlignment="Center"  Text="Already have an account?"/>
+                <Button  Clicked="SignInButton_Clicked" Text="Sign In" Style="{StaticResource ButtonSignIn}" ></Button>
+
+            </StackLayout>
+            
+            
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

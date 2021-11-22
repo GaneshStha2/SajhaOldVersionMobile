@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popups:PopupPage xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             x:Class="Riddha.CourierMS.Views.Popups.HomeProfilePicturePopups"
+             CloseWhenBackgroundIsClicked="True"
+             xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices"
+             xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+
+
+    <StackLayout VerticalOptions="Start" HeightRequest="150" HorizontalOptions="EndAndExpand" Margin="0,70,30,0" BackgroundColor="White">
+        <ListView x:Name="MenuList" HasUnevenRows="True" SeparatorColor="White" WidthRequest="150" ItemTapped="MenuList_ItemTapped" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Grid Padding="0" Style="{StaticResource ActionButtonRow}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Style="{StaticResource HomeActionImage}"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="20" Source="{Binding Icon}" ></Image>
+
+                                <Label FontFamily="MontserratBold" FontSize="Micro" Text="{Binding Title}" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center"></Label>
+                            </Grid>
+                            <BoxView Margin="0" Style="{StaticResource ListviewDivider}"></BoxView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+
+
+</popups:PopupPage>

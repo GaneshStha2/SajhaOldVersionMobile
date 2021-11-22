@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Views.SignUpView"
+              xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices;assembly=Riddha.CourierMS" 
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame  Style="{StaticResource NavigationTopSmall}" Margin="0,-10,0,0" BackgroundColor="White">
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton Style="{StaticResource NavigationBarBackButton}" BackgroundColor="White" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                        <Label Style="{StaticResource PrimaryTitleLableLarge}" Margin="-40,25,0,0" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Text="Sign Up"  ></Label>
+                    </StackLayout>
+                </Frame>
+                <ScrollView>
+
+
+                    <StackLayout Margin="0,20,0,0">
+                        <Label Style="{StaticResource SecondaryTitleLableSmall}" FontSize="13" Margin="0,0,0,20" Text="Its Free To Sign Up"/>
+                        <StackLayout >
+                            <Frame Style="{StaticResource EntryFrame}" x:Name="FullNameFrame">
+                                <StackLayout Orientation="Horizontal">
+                                    <local:TextBoarderlessEntry ReturnType="Next" x:Name="FullNameEntry" Text="{Binding SignUpViewModel.FullName}" Placeholder="Full Name" Focused="FullNameEntry_Focused" TextChanged="FullNameText_Changed" Unfocused="FullNameEntry_UnFocused" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                                    <Image Style="{StaticResource EntryImage}" x:Name="FullNameSucessIndicator" IsVisible="False" Source="SuccessIndicatior.png" ></Image>
+                                </StackLayout>
+                            </Frame>
+                            <Frame Style="{StaticResource EntryFrame}"  x:Name="EmailAddressFrame">
+                                <StackLayout Orientation="Horizontal">
+                                    <local:TextBoarderlessEntry ReturnType="Next" x:Name="EmailAddressEntry" Text="{Binding SignUpViewModel.EmailAddress}" Placeholder="Email Address" Focused="EmailAddressEntry_Focused" TextChanged="EmailAddressText_Changed" Unfocused="EmailAddressEntry_UnFocused" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                                    <Image Style="{StaticResource EntryImage}" x:Name="EmailSucessIndicator"  IsVisible="False" Source="SuccessIndicatior.png" ></Image>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame Style="{StaticResource EntryFrame}"  x:Name="MobileNumberFrame">
+                                <StackLayout Orientation="Horizontal">
+                                    <local:TextBoarderlessEntry Keyboard="Numeric" ReturnType="Next" x:Name="MobileNumberEntry" Text="{Binding SignUpViewModel.MobileNumber}" Placeholder="Mobile Number" Focused="MobileNumberEntry_Focused" TextChanged="MobileNumberText_Changed" Unfocused="MobileNumberEntry_UnFocused" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                                    <Image Style="{StaticResource EntryImage}" x:Name="MobileNumberIndicator"  IsVisible="False" Source="SuccessIndicatior.png" ></Image>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame Style="{StaticResource EntryFrame}"  x:Name="AddressFrame">
+                                <StackLayout Orientation="Horizontal">
+                                    <local:TextBoarderlessEntry Keyboard="Text" ReturnType="Next" x:Name="AddressEntry" Text="{Binding SignUpViewModel.Address}" Placeholder="Address" Focused="AddressEntry_Focused" TextChanged="AddressText_Changed" Unfocused="AddressEntry_UnFocused" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                                    <Image Style="{StaticResource EntryImage}" x:Name="AddressIndicator"  IsVisible="False" Source="SuccessIndicatior.png" ></Image>
+                                </StackLayout>
+                            </Frame>
+                            <Frame Style="{StaticResource EntryFrame}" x:Name="PasswordFrame">
+                                <StackLayout Orientation="Horizontal">
+                                    <local:TextBoarderlessEntry ReturnType="Done"  x:Name="PasswordEntry"  Text="{Binding SignUpViewModel.Password}" Focused="PasswordEntry_Focused" TextChanged="PasswordText_Changed" Unfocused="PasswordEntry_UnFocused" Placeholder="Password"  Style="{StaticResource LocalEntry}" ></local:TextBoarderlessEntry>
+                                    <Image Style="{StaticResource EntryImage}" x:Name="PasswordIndicator"  IsVisible="False" Source="SuccessIndicatior.png" ></Image>
+                                </StackLayout>
+                            </Frame>
+                            <Button  Text="Continue" Clicked="RegisterButton_Clicked" Style="{StaticResource ButtonPrimarySubmit}"  Margin="40,30,40,40"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>
+      
+       
+    </ContentPage.Content>
+</ContentPage>

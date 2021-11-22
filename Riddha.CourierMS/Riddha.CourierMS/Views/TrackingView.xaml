@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+               xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices;assembly=Riddha.CourierMS" 
+             mc:Ignorable="d"
+             x:Class="Riddha.CourierMS.Views.TrackingView">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Frame  Style="{StaticResource NavigationTopSmall}" >
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}"  Clicked="BackButton_Clicked" Source="{Binding BackBtnSource}" ></ImageButton>
+                    <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Courier Timeline"  ></Label>
+                </StackLayout>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+
+                    <Frame Style="{StaticResource EntryFrame}" VerticalOptions="StartAndExpand" BorderColor="{StaticResource BoarderofScanner}">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <Image Style="{StaticResource EntryImage}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  Source="ParcelTextSearchIcon.png" ></Image>
+                            <!--<local:TextBoarderlessEntry ReturnType="Next" x:Name="TrackingNoEntryText"  Placeholder="Click Here And start Scanning "  TextChanged="TrackingNoEntryText_Changed" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>-->
+                            <local:TextBoarderlessEntry  x:Name="TrackingNoEntryText"  HorizontalOptions="Fill" FontSize="14" Placeholder="Tracking Number"  TextChanged="TrackingNoEntryText_Changed" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                            <Image Style="{StaticResource EntryImage}" HorizontalOptions="EndAndExpand" Source="ParcelTextClearIcon.png" ></Image>
+                        </StackLayout>
+                    </Frame>
+                    <BoxView Style="{StaticResource ListviewDivider}" HeightRequest="2" Color="{StaticResource PrimaryColorLight}" Margin="40,10,40,0"></BoxView>
+
+
+
+                    <Label  Style="{StaticResource LabelBold}"  FontFamily="MontserratSemiBold" FontSize="15" Margin="40,10,0,0" Text="Courier Timeline"></Label>
+
+                    <ListView x:Name="TimeLineViewList" VerticalOptions="EndAndExpand" Margin="10,10,0,10" IsVisible="true" HasUnevenRows="True" ItemsSource="{Binding TimeLineList}" >
+                        <ListView.ItemTemplate >
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Grid Padding="10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Row="0" Grid.Column="0" TextColor="{StaticResource PrimaryColor}" FontSize="Micro" Text="{Binding Date}"></Label>
+                                            <Label Grid.Row="1" Grid.Column="0" TextColor="{StaticResource PrimaryColor}" FontSize="Small" Text="{Binding UpdatedTime}"></Label>
+                                            <Frame Grid.Column="1" Grid.RowSpan="2" Padding="10" IsClippedToBounds="True" BackgroundColor="{StaticResource PrimaryColor}" CornerRadius="100" HorizontalOptions="Start" VerticalOptions="Center">
+                                                <Label  Text="{Binding ServiceCenterCode}" FontSize="Small" FontFamily="MontserratSemiBold" TextColor="White"></Label>
+                                                
+                                            </Frame>
+                                            <Label  Grid.Row="0" Grid.Column="2" TextColor="Black" Text="{Binding BookingStatus}"></Label>
+                                            <Label  Grid.Row="1" Grid.Column="2"  TextColor="Black" Text="{Binding ServiceCenter}"></Label>
+                                        </Grid>
+                                      
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+            </ScrollView>
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

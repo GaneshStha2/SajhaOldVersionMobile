@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Resources.DesignComponent.ComponentOneView"
+              xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices;assembly=Riddha.CourierMS" 
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout >
+
+
+            <ScrollView>
+
+                <StackLayout>
+
+
+                    <Frame  Style="{StaticResource NavigationTopSmall}" >
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                            <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Location Information"  ></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Image Style="{StaticResource ImageStep}" Source="ProgressBar.png"></Image>
+
+                    <Frame Style="{StaticResource EntryFrame}">
+                        <StackLayout Orientation="Horizontal">
+                            <local:TextBoarderlessEntry Placeholder="Full Name" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                            <Image Style="{StaticResource EntryImage}" Source="SuccessIndicatior.png" ></Image>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Style="{StaticResource EntryFrame}">
+                        <StackLayout Orientation="Horizontal">
+                            <local:TextBoarderlessEntry Placeholder="Password" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                            <Button Style="{StaticResource EntryButton}" ImageSource="PasswordNotVisible.png"  ></Button>
+                        </StackLayout>
+                    </Frame>
+
+
+                </StackLayout>
+            </ScrollView>
+            
+            <Label Style="{StaticResource ListViewTitle}" Text="Street Address" ></Label>
+            <Frame Style="{StaticResource StreetEntryFrame}">
+                <local:TextBoarderlessEntry  Style="{StaticResource SteetEntry}"></local:TextBoarderlessEntry>
+            </Frame>
+            
+            <Button  Text="Next" Clicked="NextButton_Clicked" Style="{StaticResource ButtonPrimaryOutLine}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

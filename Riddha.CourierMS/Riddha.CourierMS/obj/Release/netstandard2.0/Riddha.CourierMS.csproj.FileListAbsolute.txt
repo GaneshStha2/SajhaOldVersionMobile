@@ -1,0 +1,170 @@
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csprojAssemblyReference.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.deps.json
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\ref\Riddha.CourierMS.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Services.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Services.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Services.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Services.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentOneView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentTwoView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\TabPageView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\BookingSuccessfulView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\BookingView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DashBoardView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DeliveryLocationView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DeliveryView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\InternationalBookingCountryView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\LoginView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NationalBookingView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NationalDeliveryParcelEstimateView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelDispatchView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelPickUpView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelReceiveView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\PickUpLocationView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\DeliveryLocationPopup.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\DeliveryParcelListPopup.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\HomeProfilePicturePopups.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\PickUpLocationPopup.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\SelectBranchPopup.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\SelectCustomerPop.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ReceiverSelectionView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUploadPhotoAndSuccessView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUpVerifyNumberView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUpView.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SplashScreen.xaml.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\Style\Style.css.g.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.AssemblyInfoInputs.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.AssemblyInfo.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csproj.CoreCompileInputs.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\XamlC.stamp
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csproj.CopyComplete
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\ref\Riddha.CourierMS.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.deps.json
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\ref\Riddha.CourierMS.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Services.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Services.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Services.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Services.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csprojAssemblyReference.cache
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentOneView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentTwoView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\TabPageView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\BookingSuccessfulView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\BookingView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\CreditStatementView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DashBoardView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DeliveryLocationView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DeliveryView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\InternationalBookingCountryView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\LoginView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NationalBookingView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NationalDeliveryParcelEstimateView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NotificationView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelDispatchView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelPickUpView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelReceiveView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\PickUpLocationView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\DeliveryLocationPopup.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\DeliveryParcelListPopup.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\HomeProfilePicturePopups.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\PickUpLocationPopup.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\SelectBranchPopup.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\SelectCustomerPop.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ReceiverSelectionView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUploadPhotoAndSuccessView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUpVerifyNumberView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUpView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SplashScreen.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\TrackingView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ViewHistoryView.xaml.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\Style\Style.css.g.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.AssemblyInfoInputs.cache
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.AssemblyInfo.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csproj.CoreCompileInputs.cache
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\XamlC.stamp
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csproj.CopyComplete
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\ref\Riddha.CourierMS.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.deps.json
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\ref\Riddha.CourierMS.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Services.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.DB.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Services.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Services.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Services.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.DB.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\bin\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csprojAssemblyReference.cache
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentOneView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentTwoView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\DesignComponent\ComponentView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\TabPageView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\BookingSuccessfulView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\BookingView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\CreditStatementView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DashBoardView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DeliveryLocationView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\DeliveryView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\InternationalBookingCountryView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\LoginView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NationalBookingView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NationalDeliveryParcelEstimateView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\NotificationView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelDispatchView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelPickUpView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ParcelReceiveView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\PickUpLocationView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\DeliveryLocationPopup.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\DeliveryParcelListPopup.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\HomeProfilePicturePopups.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\PickUpLocationPopup.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\SelectBranchPopup.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\Popups\SelectCustomerPop.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ReceiverSelectionView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUploadPhotoAndSuccessView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUpVerifyNumberView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SignUpView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\SplashScreen.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\TrackingView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Views\ViewHistoryView.xaml.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Resources\Style\Style.css.g.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.AssemblyInfoInputs.cache
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.AssemblyInfo.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csproj.CoreCompileInputs.cache
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\XamlC.stamp
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.csproj.CopyComplete
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\ref\Riddha.CourierMS.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS\Riddha.CourierMS\obj\Release\netstandard2.0\Riddha.CourierMS.pdb

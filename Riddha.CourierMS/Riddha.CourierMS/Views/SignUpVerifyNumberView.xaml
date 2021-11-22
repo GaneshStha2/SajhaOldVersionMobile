@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Views.SignUpVerifyNumberView"
+             BackgroundColor="White"
+              xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices;assembly=Riddha.CourierMS">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame  Style="{StaticResource NavigationTopSmall}" Margin="0,-10,0,0" BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}" BackgroundColor="White" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                    
+                </StackLayout>
+            </Frame>
+
+            <Label Style="{StaticResource PrimaryTitleLableLarge}" Margin="0,25,0,0" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Text="Verify your number with"  ></Label>
+            <Label Style="{StaticResource PrimaryTitleLableLarge}" Margin="0,-5,0,0" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Text="codes send to you"  ></Label>
+
+            <StackLayout Style="{StaticResource OTPCodeStack}" >
+                <Frame Style="{StaticResource OTPCodeFrame}" x:Name="OTPOneFrame" >
+                    <local:TextBoarderlessEntry x:Name="OTPOneEntry" TextChanged="OTPOneEntry_TextChanged"  Style="{StaticResource OTPCodeEntry}"></local:TextBoarderlessEntry>
+                </Frame>
+                <Frame Margin="5,0,0,0" x:Name="OTPTwoFrame" Style="{StaticResource OTPCodeFrame}">
+                    <local:TextBoarderlessEntry x:Name="OTPTwoEntry" TextChanged="OTPTwoEntry_TextChanged"    Style="{StaticResource OTPCodeEntry}"></local:TextBoarderlessEntry>
+                </Frame>
+                <Frame Margin="5,0,0,0" x:Name="OTPThreeFrame" Style="{StaticResource OTPCodeFrame}" >
+                    <local:TextBoarderlessEntry  x:Name="OTPThreeEntry" TextChanged="OTPThreeEntry_TextChanged"  Style="{StaticResource OTPCodeEntry}"></local:TextBoarderlessEntry>
+                </Frame>
+                <Frame Margin="5,0,0,0" x:Name="OTPFourFrame" Style="{StaticResource OTPCodeFrame}">
+                    <local:TextBoarderlessEntry   x:Name="OTPFourEntry" TextChanged="OTPFourEntry_TextChanged"     Style="{StaticResource OTPCodeEntry}"></local:TextBoarderlessEntry>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal" Margin="0,40,0,40" >
+                <Label Style="{StaticResource SecondaryTitleLableSmall}"  VerticalTextAlignment="Center"  Text="I didn't receive the code,"/>
+                <Button  Clicked="ResendButton_Clicked" Text="Resend" FontSize="14" Style="{StaticResource ButtonSignIn}" ></Button>
+            </StackLayout>
+
+            <Button  Text="Continue" Clicked="ContinueButton_Clicked" Style="{StaticResource ButtonPrimarySubmit}"  Margin="40,30,40,40"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

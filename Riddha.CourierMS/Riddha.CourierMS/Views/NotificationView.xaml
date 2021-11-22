@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Views.NotificationView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame  Style="{StaticResource NavigationTopSmall}" >
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}"  Clicked="BackButton_Clicked" Source="{Binding BackBtnSource}" ></ImageButton>
+                    <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Notification"  ></Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,8 @@
+﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.TabPageView"
+            Shell.TabBarBackgroundColor="White"
+       
+            Shell.TabBarTitleColor ="{StaticResource NavigationTitleColor}"
+            Shell.TabBarUnselectedColor="#94e336">
+</Shell>

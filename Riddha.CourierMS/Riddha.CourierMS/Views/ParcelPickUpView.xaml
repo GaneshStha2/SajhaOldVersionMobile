@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices"
+             mc:Ignorable="d"
+             x:Class="Riddha.CourierMS.Views.ParcelPickUpView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame  Style="{StaticResource NavigationTopSmall}" >
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                    <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Pick Up Information"  ></Label>
+                </StackLayout>
+            </Frame>
+
+
+
+            <Frame Style="{StaticResource EntryFrame}"  Padding="15,15" BorderColor="{StaticResource BoarderofScanner}">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SelectParcelTapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+
+
+                <StackLayout>
+
+
+                    <StackLayout Orientation="Horizontal" IsVisible="True" >
+                        <Image Style="{StaticResource EntryImage}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  Source="SelecBranchtHeartIcon.png" ></Image>
+                        <Label   x:Name="SelectParcelLable" HorizontalOptions="Fill" FontSize="15" Text="Select Parcel"  Style="{StaticResource LocalEntry}"></Label>
+                        <Image Style="{StaticResource EntryImage}" HorizontalOptions="EndAndExpand" Source="DownPathIcon.png" ></Image>
+                    </StackLayout>
+
+
+
+                </StackLayout>
+
+
+            </Frame>
+
+            <StackLayout Margin="0,20,0,0">
+
+                <StackLayout >
+
+
+                    <StackLayout>
+                        <Frame 
+                        Style="{StaticResource EntryFrame}" 
+                        x:Name="FullNameFrame">
+
+                            <StackLayout 
+                            Orientation="Horizontal">
+
+                                <local:TextBoarderlessEntry 
+                                ReturnType="Next" 
+                                x:Name="FullNameEntry" 
+                                Text="{Binding PickUp.Name}" 
+                                Placeholder="Full Name" 
+                                Focused="FullNameEntry_Focused" 
+                                TextChanged="FullNameText_Changed" 
+                                Unfocused="FullNameEntry_UnFocused"
+                                Style="{StaticResource LocalEntry}">
+                                </local:TextBoarderlessEntry>
+
+                                <Image 
+                                Style="{StaticResource EntryImage}" 
+                                x:Name="FullNameSucessIndicator" 
+                                IsVisible="False" 
+                                Source="SuccessIndicatior.png" >
+                                </Image>
+
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+
+
+                    <StackLayout x:Name="SelectedParcelStack" IsVisible="False">
+
+                        <Grid  Style="{StaticResource ListViewParcelList}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Style="{StaticResource ListViewImage}"  Source="HomeParcelIcon.png" ></Image>
+
+                            <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                                <Label 
+                                    x:Name="TrackingNO"
+                                    Style="{StaticResource LabelBold}" 
+                                    Text="{Binding SelectedParcel.TrackingNo}" >
+                                </Label>
+
+
+                                <Label Style="{StaticResource LabelBold}" Text="TO" ></Label>
+
+                                <StackLayout Orientation="Horizontal" Margin="20,0,0,0" HorizontalOptions="FillAndExpand" >
+                                    <Label Style="{StaticResource LabelDim}" Text="For"  ></Label>
+
+                                    <Label 
+                                        x:Name="ToLocation" 
+                                        Style="{StaticResource LabelDim}" 
+                                        Text="{Binding SelectedParcel.ToLocation}"  >
+                                    </Label>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="20,0,0,0" HorizontalOptions="FillAndExpand" >
+
+                                    <Label 
+                                        x:Name="CustomerName"
+                                        Style="{StaticResource LabelDim}" 
+                                        Text="{Binding SelectedParcel.CustomerName}"  />
+
+
+                                    <Label x:Name="ContactNo" Style="{StaticResource LabelDim}" Text="{Binding SelectedParcel.ContactNo}"  ></Label>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Grid>
+                        <BoxView Style="{StaticResource ListviewDivider}" Margin="30,5,30,0" ></BoxView>
+
+
+                    </StackLayout>
+
+                    <!--<Button  
+                        x:Name="Submit" 
+                        Text="Submit" 
+                        Clicked="Submit_Clicked" 
+                        Style="{StaticResource ButtonPrimarySubmit}" 
+                        Margin="40,30,40,40"/>-->
+
+                    <Button  
+                        x:Name="Next" 
+                        Text="Submit" 
+                        Clicked="Next_Clicked" 
+                        Style="{StaticResource ButtonPrimarySubmit}" 
+                        Margin="40,30,40,40"/>
+
+                </StackLayout>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

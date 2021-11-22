@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Riddha.CourierMS.Views.CreditStatementView">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Frame  Style="{StaticResource NavigationTopSmall}" >
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                    <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Credit Statement"  ></Label>
+                </StackLayout>
+            </Frame>
+
+
+            <ListView x:Name="CreditStatementList" SeparatorColor="White" VerticalOptions="StartAndExpand" Margin="0,0,0,10" IsVisible="True" HasUnevenRows="True" ItemsSource="{Binding UnPaidTransactions}">
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid  Style="{StaticResource ListViewParcelList}" Margin="10,10" Padding="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                        <RowDefinition Height="20"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Style="{StaticResource ListViewImage}" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"  Source="HomeParcelIcon.png" ></Image>
+
+                                    <StackLayout Style="{StaticResource HomeActionInformationRow}" Grid.Column="1" >
+                                        <Label Style="{StaticResource LabelBold}" Text="{Binding TrackingNo}" ></Label>
+                                        <Label Style="{StaticResource LabelBold}" Text="TO"  ></Label>
+                                        <StackLayout Orientation="Horizontal" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" >
+                                            <Label Style="{StaticResource LabelDimMedium}" Text="For"  ></Label>
+                                            <Label Style="{StaticResource LabelDimMedium}" Text="{Binding ToLocation}" LineBreakMode="TailTruncation"   ></Label>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" Margin="10,0,0,0" Grid.ColumnSpan="3" HorizontalOptions="FillAndExpand" >
+                                            <Label Style="{StaticResource LabelDimMedium}" HorizontalOptions="Start" Text="{Binding CustomerName}"  ></Label>
+                                            <Label Style="{StaticResource LabelDimMedium}" HorizontalOptions="Start" Text="{Binding ContactNo}"  ></Label>
+                                            
+                                        </StackLayout>
+
+                                    </StackLayout>
+
+
+                                    <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Horizontal">
+                                        <Label Style="{StaticResource LabelBold}" Text="Rs"  ></Label>
+                                        <Label Style="{StaticResource LabelBold}" Text="{Binding Amount}" ></Label>
+                                    </StackLayout>
+
+                                </Grid>
+                                <BoxView Style="{StaticResource ListviewDivider}" Margin="30,0,30,0" ></BoxView>
+
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

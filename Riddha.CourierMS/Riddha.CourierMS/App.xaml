@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.App"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+              xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices;assembly=Riddha.CourierMS" 
+             xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <Application.Resources>
+        <StyleSheet Source="/Resources/Style/Style.css" />
+        <Color x:Key="PrimaryColor">#329D9C</Color>
+        <Color x:Key="PrimaryColorLight">#E0ECDE</Color>
+        <Color x:Key="DangerColor">Red</Color>
+        <Color x:Key="SecondaryColor">#205072</Color>
+        <Color x:Key="PrimaryLableColor">#205072</Color>
+        <Color x:Key="SecondaryLableColor">#68B2A0</Color>
+        <Color x:Key="CardTitleColor">#000000</Color>
+        <Color x:Key="NavigationTitleColor">#78BC27</Color>
+        <Color x:Key="TitleColor">#000</Color>
+        <Color x:Key="BoarderofScanner">#56C596</Color>
+        <System:String x:Key="CssGradientSourcePrimary">linear-gradient(45deg, rgb(149, 10, 155) 0%, rgb(149, 10, 155) 9%,rgb(120, 16, 136) 9%, rgb(120, 16, 136) 13%,rgb(178, 3, 174) 13%, rgb(178, 3, 174) 32%,rgb(91, 23, 117) 32%, rgb(91, 23, 117) 42%,rgb(32, 36, 79) 42%, rgb(32, 36, 79) 46%,rgb(61, 30, 98) 46%, rgb(61, 30, 98) 70%,rgb(3, 43, 60) 70%, rgb(3, 43, 60) 100%)</System:String>
+
+        <Style x:Key="NavigationTopLarge" TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColorLight}"></Setter>
+            <Setter Property="Margin" Value="0,-30,0,0"></Setter>
+            <Setter Property="CornerRadius" Value="40"></Setter>
+            <Setter Property="Padding" Value="0,80,0,30"></Setter>
+        </Style>
+
+        <Style x:Key="NavigationTopSmall" TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColorLight}"></Setter>
+            <Setter Property="Margin" Value="0,-25,0,0"></Setter>
+            <Setter Property="CornerRadius" Value="40"></Setter>
+            <Setter Property="Padding" Value="0,10,0,20"></Setter>
+            <Setter Property="HasShadow" Value="False"></Setter>
+        </Style>
+
+        <Style x:Key="NavigationBarBackButton" TargetType="ImageButton">
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColorLight}"></Setter>
+            <Setter Property="HorizontalOptions" Value="Start"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="Padding" Value="5"></Setter>
+            <Setter Property="CornerRadius" Value="50"></Setter>
+            <Setter Property="HeightRequest" Value="30"></Setter>
+            <Setter Property="WidthRequest" Value="30"></Setter>
+            <Setter Property="Margin" Value="20,25,0,0"></Setter>
+         
+        </Style>
+
+        <Style x:Key="NavigationPageTitleLabel" TargetType="Label">
+            <Setter Property="VerticalTextAlignment" Value="Center" ></Setter>
+            <Setter Property="FontAttributes" Value="Bold" ></Setter>
+            <Setter Property="TextColor" Value="{StaticResource SecondaryColor}" ></Setter>
+            <Setter Property="Margin" Value="20,25,0,0" ></Setter>
+            <Setter Property="FontSize" Value="13" ></Setter>
+            <Setter Property="FontFamily" Value="MontserratSemiBold" ></Setter>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" ></Setter>
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" ></Setter>
+        </Style>
+
+        <Style x:Key="PrimaryTitleLableLarge" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource PrimaryLableColor}"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            <Setter Property="FontSize" Value="21"></Setter>
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+        </Style>
+        <Style x:Key="SecondaryTitleLableLarge" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource SecondaryLableColor}"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            <Setter Property="FontSize" Value="21"></Setter>
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+        </Style>
+        <Style x:Key="OTPCodeStack" TargetType="StackLayout">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"></Setter>
+            <Setter Property="Margin" Value="0,30,0,0"></Setter>
+            <Setter Property="Orientation" Value="Horizontal"></Setter>
+        </Style>
+        <Style x:Key="OTPCodeFrame" TargetType="Frame">
+            <Setter Property="Padding" Value="0"></Setter>
+            <Setter Property="HeightRequest" Value="69"></Setter>
+            <Setter Property="WidthRequest" Value="69"></Setter>
+            <Setter Property="CornerRadius" Value="20"></Setter>
+            <Setter Property="BorderColor" Value="{StaticResource SecondaryLableColor}"></Setter>
+            <Setter Property="BackgroundColor" Value="White"></Setter>
+        </Style>
+        <Style x:Key="OTPCodeEntry" TargetType="local:TextBoarderlessEntry">
+            <Setter Property="ReturnType" Value="Next"></Setter>
+            <Setter Property="Keyboard" Value="Numeric"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            <Setter Property="MaxLength" Value="1"></Setter>
+            <Setter Property="FontSize" Value="Large"></Setter>
+            <Setter Property="FontFamily" Value="MontserratSemiBold"></Setter>
+            <Setter Property="PlaceholderColor" Value="LightGray"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+        </Style>
+
+        <Style x:Key="SecondaryTitleLableSmall" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource SecondaryLableColor}"></Setter>
+            <Setter Property="FontAttributes" Value="None"></Setter>
+            <Setter Property="FontSize" Value="12"></Setter>
+            <Setter Property="FontFamily" Value="MontserratMedium"></Setter>
+        </Style>
+
+        <Style x:Key="ImageSliderStack" TargetType="StackLayout">
+            <Setter Property="Orientation" Value="Horizontal"></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="Margin" Value="0,40,0,0"></Setter>
+        </Style>
+
+        <Style x:Key="ImageSliderFrame" TargetType="Frame">
+            <Setter Property="CornerRadius" Value="100"></Setter>
+            <Setter Property="HeightRequest" Value="10"></Setter>
+            <Setter Property="Padding" Value="0"></Setter>
+            <Setter Property="WidthRequest" Value="10"></Setter>
+        </Style>
+
+        <Style x:Key="ButtonSignIn" TargetType="Button">
+            <Setter Property="HeightRequest" Value="20"></Setter>
+            <Setter Property="Margin" Value="-5,0,0,0"></Setter>
+            <Setter Property="VerticalOptions" Value="Start"></Setter>
+            <Setter Property="Font" Value="13"></Setter>
+
+            <Setter Property="BackgroundColor" Value="White"></Setter>
+            <Setter Property="Padding" Value="0"></Setter>
+            <Setter Property="WidthRequest" Value="50"></Setter>
+        </Style>
+
+        <Style x:Key="ButtonPrimarySubmit" TargetType="Button">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            
+            <Setter Property="HeightRequest" Value="55"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="Margin" Value="40,20,40,10"></Setter>
+            <Setter Property="CornerRadius" Value="21"></Setter>
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+            
+            
+        </Style>
+        
+        <Style x:Key="ButtonPrimaryOutLine" TargetType="Button">
+            <Setter Property="TextColor" Value="{StaticResource PrimaryColor}"></Setter>
+            <Setter Property="BackgroundColor" Value="White"></Setter>
+            <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}"></Setter>
+            <Setter Property="BorderWidth" Value="2"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            <Setter Property="HeightRequest" Value="55"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="Margin" Value="30,20,30,0"></Setter>
+            <Setter Property="CornerRadius" Value="30"></Setter>
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+        </Style>
+        
+        <Style x:Key="HomeButtonStack" TargetType="StackLayout">
+            <Setter Property="Orientation" Value="Horizontal"></Setter>
+            <Setter Property="HorizontalOptions" Value="StartAndExpand"></Setter>
+            <Setter Property="Margin" Value="40,20,40,0"></Setter>
+        </Style>
+        
+        <Style x:Key="HomeButtonBlue" TargetType="Button">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}"></Setter>
+            <Setter Property="CornerRadius" Value="30"></Setter>
+            <Setter Property="Padding" Value="15,5"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="HeightRequest" Value="24"></Setter>
+        </Style>
+        
+        <Style x:Key="HomeButtonGreen" TargetType="Button">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"></Setter>
+            <Setter Property="CornerRadius" Value="30"></Setter>
+            <Setter Property="Padding" Value="15,5"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="HeightRequest" Value="24"></Setter>
+        </Style>
+        
+        <Style x:Key="ActionButtonRow" TargetType="Grid">
+            <Setter Property="Margin" Value="20,20,20,0"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+        </Style>
+        
+        <Style x:Key="HomeActionInformationRow" TargetType="StackLayout">
+            <Setter Property="Grid.Column" Value="1"></Setter>
+            <Setter Property="Grid.Row" Value="0"></Setter>
+        </Style>
+        
+        <Style x:Key="HomeActionImage" TargetType="Image">
+            <Setter Property="HeightRequest" Value="24"></Setter>
+            <Setter Property="Grid.Column" Value="0"></Setter>
+            <Setter Property="Grid.Row" Value="0"></Setter> 
+        </Style>
+        
+        <Style x:Key="HomeActionButton" TargetType="Button">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="FontSize" Value="Micro"></Setter>
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+            <Setter Property="HeightRequest" Value="24"></Setter>
+            <Setter Property="Grid.Row" Value="0"></Setter>
+            <Setter Property="Grid.Column" Value="2"></Setter>
+            <Setter Property="CornerRadius" Value="30"></Setter>
+            <Setter Property="Padding" Value="7,0,7,0"></Setter>
+            <Setter Property="HorizontalOptions" Value="Fill"></Setter>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+        </Style>
+
+        <Style x:Key="ImageSuccess" TargetType="Image">
+            <Setter Property="Margin" Value="80"></Setter>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"></Setter>
+        </Style>
+        
+        <Style x:Key="ImageRowSmall" TargetType="Image">
+            <Setter Property="HeightRequest" Value="50"></Setter>
+            <Setter Property="Grid.Column" Value="0"></Setter>
+            <Setter Property="Grid.Row" Value="0"></Setter>
+        </Style>
+        
+        <Style x:Key="ImageStep" TargetType="Image">
+            <Setter Property="HorizontalOptions" Value="Fill"></Setter>
+            <Setter Property="VerticalOptions" Value="Start"></Setter>
+            <Setter Property="Margin" Value="20,20,20,0"></Setter>
+        </Style>
+        
+        <Style x:Key="ListViewLocation" TargetType="Grid">
+            <Setter Property="Margin" Value="20,20,30,0"></Setter>
+            <Setter Property="Padding" Value="0"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+
+        </Style>
+        
+        <Style x:Key="ListViewImage" TargetType="Image">
+            <Setter Property="HeightRequest" Value="22"></Setter>
+            <Setter Property="VerticalOptions" Value="StartAndExpand"></Setter>
+            <Setter Property="Grid.Column" Value="0"></Setter>
+            <Setter Property="Grid.Row" Value="0"></Setter>
+        </Style>
+        
+        <Style x:Key="ListViewDescription" TargetType="StackLayout">
+            <Setter Property="Grid.Column" Value="1"></Setter>
+            <Setter Property="Grid.Row" Value="0"></Setter>
+        </Style>
+        
+        <Style x:Key="ListViewTitle" TargetType="Label">
+            <Setter Property="Margin" Value="30,20,30,0"></Setter>
+      
+            <Setter Property="FontFamily" Value="MontserratRegular"></Setter>
+            <Setter Property="TextColor" Value="#707070"></Setter>
+        </Style>
+        
+        <Style x:Key="ListViewRadio" TargetType="RadioButton">
+            <Setter Property="Grid.Column" Value="2"></Setter>
+            <Setter Property="Grid.Row" Value="0"></Setter>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"></Setter>    
+            <Setter Property="VerticalOptions" Value="StartAndExpand"></Setter>    
+        </Style>
+
+        <Style x:Key="ListViewParcelList" TargetType="Grid">
+            <Setter Property="Margin" Value="20,20,30,0"></Setter>
+            <Setter Property="Padding" Value="0"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+        </Style>
+        
+        
+        <Style x:Key="LabelBold" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+            <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource PrimaryLableColor}"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            
+            <Setter Property="FontFamily" Value="MontserratBold"></Setter>
+        </Style>
+        
+        <Style x:Key="LabelDim" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+            <Setter Property="TextColor" Value="Gray"></Setter>
+            <Setter Property="FontAttributes" Value="None"></Setter>
+            <Setter Property="FontSize" Value="Micro"></Setter>
+            <Setter Property="FontFamily" Value="MontserratRegular"></Setter>
+        </Style>
+        
+        <Style x:Key="LabelDimMedium" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+            <Setter Property="TextColor" Value="Gray"></Setter>
+            <Setter Property="FontAttributes" Value="None"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontFamily" Value="MontserratRegular"></Setter>
+        </Style>
+        
+        
+       
+        <Style x:Key="StreetEntryFrame" TargetType="Frame">
+            <Setter Property="Margin" Value="0,10,0,10"></Setter>
+            <Setter Property="Padding" Value="0"></Setter>
+            
+            <Setter Property="HeightRequest" Value="80"></Setter>
+            <Setter Property="BorderColor" Value="#7BE495"></Setter>
+        </Style>
+        <Style x:Key="SteetEntry" TargetType="local:TextBoarderlessEntry">
+            <Setter Property="PlaceholderColor" Value="LightGray"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource SecondaryColor}"></Setter>
+            <Setter Property="FontSize" Value="Medium"></Setter>
+            <Setter Property="Margin" Value="15,0,0,0"></Setter>
+            
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="VerticalOptions" Value="StartAndExpand"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+            <!--<Setter Property="CornerRadius" Value="30"></Setter>-->
+            <!--<Setter Property="Padding" Value="30,10,30,10"></Setter>-->
+        </Style>
+
+        <Style x:Key="CardAction" TargetType="StackLayout"></Style>
+        <Style x:Key="CardActionIcon" TargetType="Frame"></Style>
+        <Style x:Key="CardActionDescription" TargetType="Frame"></Style>
+        <Style x:Key="LabelSuccessMessage" TargetType="Label"></Style>
+
+        <Style x:Key="ListviewDivider" TargetType="BoxView">
+            <Setter Property="Margin" Value="30,10,30,0"></Setter>
+            <Setter Property="BackgroundColor" Value="#E0ECDE"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="HeightRequest" Value="1"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+                
+        </Style>
+
+        <Style x:Key="EntryFrame" TargetType="Frame">
+            <Setter Property="Margin" Value="40,15,40,15"></Setter>
+            <Setter Property="CornerRadius" Value="24"></Setter>
+            <Setter Property="BorderColor" Value="{StaticResource PrimaryColorLight}"></Setter>
+            <Setter Property="Padding" Value="15,7,15,7"></Setter>
+            <Setter Property="HasShadow" Value="False"></Setter>
+         </Style>
+
+        <Style x:Key="LocalEntry" TargetType="local:TextBoarderlessEntry">
+            <Setter Property="PlaceholderColor" Value="LightGray"></Setter>
+            <Setter Property="TextColor" Value="{StaticResource SecondaryColor}"></Setter>
+            <Setter Property="FontSize" Value="Medium"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+            <!--<Setter Property="CornerRadius" Value="30"></Setter>-->
+            <!--<Setter Property="Padding" Value="30,10,30,10"></Setter>-->
+        </Style>
+
+        <Style x:Key="EntryImage" TargetType="Image">
+            <Setter Property="HeightRequest" Value="24"></Setter>
+            <Setter Property="WidthRequest" Value="24"></Setter>
+            <Setter Property="HorizontalOptions" Value="End"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+        </Style>
+
+        <Style x:Key="EntryButton" TargetType="Button">
+            <Setter Property="HeightRequest" Value="28"></Setter>
+            <Setter Property="Padding" Value="5"></Setter>
+            <Setter Property="WidthRequest" Value="30"></Setter>
+            <Setter Property="HorizontalOptions" Value="End"></Setter>
+            <Setter Property="BackgroundColor" Value="White"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:local="clr-namespace:Riddha.CourierMS.DependencyServices;assembly=Riddha.CourierMS" 
+             mc:Ignorable="d"
+             x:Class="Riddha.CourierMS.Views.ParcelDispatchView">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+
+
+            <Frame  Style="{StaticResource NavigationTopSmall}" >
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Style="{StaticResource NavigationBarBackButton}" Clicked="BackButton_Clicked" Source="Back.png" ></ImageButton>
+                    <Label Style="{StaticResource NavigationPageTitleLabel}" Text="Parcel Dispatch"  ></Label>
+                </StackLayout>
+            </Frame>
+
+
+
+            <ScrollView>
+                <StackLayout>
+
+                    <Frame Style="{StaticResource EntryFrame}" Padding="15,15" BorderColor="{StaticResource BoarderofScanner}">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SelectBranchTapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+
+
+                        <StackLayout>
+
+
+                            <StackLayout Orientation="Horizontal" IsVisible="True" >
+                                <Image Style="{StaticResource EntryImage}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  Source="SelecBranchtHeartIcon.png" ></Image>
+                                <Label  x:Name="SelectBranchLable" LineBreakMode="TailTruncation"  HorizontalOptions="Fill" FontSize="15" Text="Select Branch"  Style="{StaticResource LocalEntry}"></Label>
+                                <Image Style="{StaticResource EntryImage}" HorizontalOptions="EndAndExpand" WidthRequest="18"  Source="DownPathIcon.png" ></Image>
+                            </StackLayout>
+
+                           
+
+
+
+                        </StackLayout>
+
+
+                    </Frame>
+
+                    <Grid  Style="{StaticResource ActionButtonRow}" VerticalOptions="StartAndExpand" Margin="40,10,40,0">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="QrCodeScanner_Tapped"></TapGestureRecognizer>
+                        </Grid.GestureRecognizers>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="6"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource HomeActionImage}"  Source="ParcelCameraIcon.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                            <Label Style="{StaticResource LabelBold}" Text="Mobile Camera"></Label>
+                            <Label Style="{StaticResource LabelDim}" Text="You can directly scan parcel from your mobile camera" ></Label>
+                        </StackLayout>
+                        <Image Source="RightPath.png" Grid.Row="0" Grid.Column="2" VerticalOptions="CenterAndExpand" HeightRequest="34"  ></Image>
+                    </Grid>
+
+
+                    <Grid  Style="{StaticResource ActionButtonRow}" Margin="40,10,40,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="6"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource HomeActionImage}"  Source="ParcelQrCodeIcon.png" ></Image>
+
+                        <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                            <Label Style="{StaticResource LabelBold}" Text="Mobility Device"></Label>
+                            <Label Style="{StaticResource LabelDim}" Text="You can directly scan parcel from your mobile camera" ></Label>
+                        </StackLayout>
+                    </Grid>
+
+                    <Frame Style="{StaticResource EntryFrame}" Margin="40,20,40,0" VerticalOptions="StartAndExpand" BorderColor="{StaticResource BoarderofScanner}">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <Image Style="{StaticResource EntryImage}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  Source="ParcelTextSearchIcon.png" ></Image>
+                            <!--<local:TextBoarderlessEntry ReturnType="Next" x:Name="TrackingNoEntryText"  Placeholder="Click Here And start Scanning "  TextChanged="TrackingNoEntryText_Changed" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>-->
+                            <local:TextBoarderlessEntry   x:Name="TrackingNoEntryText"  HorizontalOptions="Fill" FontSize="14" Placeholder="Click here and start scanning"  TextChanged="TrackingNoEntryText_Changed" Style="{StaticResource LocalEntry}"></local:TextBoarderlessEntry>
+                            <Image Style="{StaticResource EntryImage}" HorizontalOptions="EndAndExpand" Source="ParcelTextClearIcon.png" ></Image>
+                        </StackLayout>
+                    </Frame>
+                    <BoxView Style="{StaticResource ListviewDivider}" HeightRequest="4" Color="{StaticResource PrimaryColorLight}" Margin="40,10,40,0"></BoxView>
+
+                    <Label  Style="{StaticResource LabelBold}"  FontFamily="MontserratSemiBold" FontSize="15" Margin="40,5,0,0" Text="Dispatched List"  ></Label>
+
+
+                    <ListView x:Name="DispatchedParcelList" IsVisible="False" VerticalOptions="EndAndExpand" Margin="0,0,0,10" HasUnevenRows="True" ItemsSource="{Binding DispatchedParcelList}">
+                        <ListView.ItemTemplate >
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Grid  Style="{StaticResource ListViewParcelList}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Style="{StaticResource ListViewImage}"  Source="HomeParcelIcon.png" ></Image>
+
+                                            <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                                                <Label Style="{StaticResource LabelBold}" Text="{Binding TrackingNo}" ></Label>
+                                                <Label Style="{StaticResource LabelBold}" Text="TO"  ></Label>
+                                                <StackLayout Orientation="Horizontal" Margin="20,0,0,0" HorizontalOptions="FillAndExpand" >
+                                                    <Label Style="{StaticResource LabelDim}" Text="For"  ></Label>
+                                                    <Label Style="{StaticResource LabelDim}" Text="{Binding ToLocation}"  ></Label>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Margin="20,0,0,0" HorizontalOptions="FillAndExpand" >
+                                                    <Label Style="{StaticResource LabelDim}" Text="{Binding CustomerName}"  ></Label>
+                                                    <Label Style="{StaticResource LabelDim}" Text="{Binding ContactNo}"  ></Label>
+                                                </StackLayout>
+
+                                            </StackLayout>
+
+                                        </Grid>
+                                        <BoxView Style="{StaticResource ListviewDivider}" Margin="30,5,30,0" ></BoxView>
+
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

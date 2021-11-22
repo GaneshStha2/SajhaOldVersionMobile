@@ -1,0 +1,36 @@
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.deps.json
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csprojAssemblyReference.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.AssemblyInfoInputs.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.AssemblyInfo.cs
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csproj.CoreCompileInputs.cache
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csproj.CopyComplete
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\(Online Server)\SajhaMobileNew\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.deps.json
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csprojAssemblyReference.cache
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.AssemblyInfoInputs.cache
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.AssemblyInfo.cs
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csproj.CoreCompileInputs.cache
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csproj.CopyComplete
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.deps.json
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Model.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\bin\Release\netstandard2.0\Riddha.CourierMS.Common.Model.pdb
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csprojAssemblyReference.cache
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.AssemblyInfoInputs.cache
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.AssemblyInfo.cs
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csproj.CoreCompileInputs.cache
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.csproj.CopyComplete
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.dll
+D:\100 SVN Project\CourierManagementSystemMobile\trunk\Riddha.CourierMS.Model\obj\Release\netstandard2.0\Riddha.CourierMS.Model.pdb

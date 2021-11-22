@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Riddha.CourierMS.Views.DashBoardView"
+              >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" >
+            <Frame  Style="{StaticResource NavigationTopLarge}" x:Name="TopBackgroungBoard" Padding="10">
+                <StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Margin="0,15,0,0" >
+                        <ImageButton Margin="20,15,0,0" Style="{StaticResource NavigationBarBackButton}"  HorizontalOptions="Start" Source="HomeMenuIcon.png" ></ImageButton>
+                        <StackLayout Margin="0,20,0,0" HeightRequest="95"   HorizontalOptions="EndAndExpand" Orientation="Horizontal">
+                            <Frame  x:Name="PhotoFrame" Margin="0,0,0,0" Padding="0" BorderColor="White" IsVisible="True"  VerticalOptions="Center" HorizontalOptions="CenterAndExpand"  CornerRadius="100" HeightRequest="60" IsClippedToBounds="True" WidthRequest="60" >
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ImageTapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                </Frame.GestureRecognizers>
+                                <Image x:Name="img" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                    <Image.Source>
+                                        <UriImageSource x:Name="ImageUri" CachingEnabled="False"></UriImageSource>
+                                    </Image.Source>
+
+                                </Image>
+                            </Frame>
+
+                            <Frame  Margin="-25,0,20,0" Padding="4" BorderColor="White" BackgroundColor="{StaticResource SecondaryLableColor}" IsVisible="True"  VerticalOptions="End"   CornerRadius="100" HeightRequest="10" WidthRequest="10" >
+
+                            </Frame>
+
+                        </StackLayout>
+                        <!--<Frame   Margin="0,0,10,0" Padding="3" BorderColor="White" IsVisible="True"    CornerRadius="100" HeightRequest="15" WidthRequest="15" >
+
+                            <Image x:Name="img" Source="SignupSuccessBackbround.png" ></Image>
+                        </Frame>-->
+
+
+                    </StackLayout>
+                    <StackLayout Margin="40,20,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                        <Label HorizontalOptions="StartAndExpand" x:Name="GreetingText" Style="{StaticResource PrimaryTitleLableLarge}" Text="{Binding DashBoardViewModel.GreetingText}"/>
+
+                        <Label HorizontalOptions="StartAndExpand" x:Name="UserName" Margin="0,-5,0,0" Style="{StaticResource PrimaryTitleLableLarge}"  Text="{Binding DashBoardViewModel.UserName}"></Label>
+                        <Label HorizontalOptions="StartAndExpand" Margin="0,10,0,0" Style="{StaticResource SecondaryTitleLableSmall}" FontFamily="MontserratSemiBold" FontSize="11"  Text="You Don't Have Any Message For Today"/>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource HomeButtonStack}" x:Name="Homebtn" Margin="40,20,40,20">
+                        <Button  Text="View History"   Style="{StaticResource HomeButtonBlue}" Clicked="ViewHistoryButton_Clicked" Padding="15,5,15,5" />
+                        <Button  Text="View Your Profile" Margin="20,0,0,0" Padding="15,5,15,5" Style="{StaticResource HomeButtonGreen}" />
+
+                        <!--<Button  x:Name="ComponentBtn" Text="Component"  Clicked="ComponentBtn_Clicked"  Style="{StaticResource HomeButtonGreen}" />-->
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
+
+
+                <StackLayout VerticalOptions="StartAndExpand">
+                    
+                    <Label Style="{StaticResource LabelBold}"  
+                           FontFamily="MontserratSemiBold"
+                           FontSize="13"
+                           Margin="30,20,0,0"
+                           Text="Where are you doing today?">
+                        
+                    </Label>
+                    
+                    <ListView VerticalOptions="Fill"  
+                              x:Name="CostumerMenuList" 
+                              IsVisible="False"
+                              SeparatorColor="White" 
+                              ItemsSource="{Binding MenuListForCustomer}"
+                              ItemTapped="CostumerMenuList_ItemTapped"
+                              HasUnevenRows="True" 
+                              Margin="5,0,5,0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Padding="0">
+                                        <Grid Padding="0" Style="{StaticResource ActionButtonRow}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                                <RowDefinition Height="6"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Style="{StaticResource HomeActionImage}"  Source="{Binding Icon}" ></Image>
+
+                                            <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                                                <Label Style="{StaticResource LabelBold}" Text="{Binding Title}"  ></Label>
+                                                <Label Style="{StaticResource LabelDim}"  Margin="0,-5,0,0" Text="{Binding Message }"  ></Label>
+                                            </StackLayout>
+
+                                            <Button 
+                                                Style="{StaticResource HomeActionButton}"
+                                                IsTabStop="True" Text="{Binding ButtonText}"
+                                                CommandParameter="{Binding MenuFor}"
+                                                Clicked="ListButton_Clicked"
+                                                BackgroundColor="{Binding ButtonColor}"></Button>
+
+                                        </Grid>
+                                        <BoxView Style="{StaticResource ListviewDivider}" Margin="30,-10,30,0"></BoxView>
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <ListView 
+                        x:Name="CompanyUserMenuList"  
+                        VerticalOptions="Fill"
+                        SeparatorColor="White"
+                        ItemsSource="{Binding MenuListForCompanyUser}"
+                        ItemTapped="CompanyUserMenuList_ItemTapped"
+                        HasUnevenRows="True" 
+                        Margin="5,0,5,0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                <StackLayout Padding="0">
+                                    <Grid Padding="0"  Style="{StaticResource ActionButtonRow}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                                <RowDefinition Height="6"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Style="{StaticResource HomeActionImage}"  Source="{Binding Icon}" ></Image>
+
+                                            <StackLayout Style="{StaticResource HomeActionInformationRow}" >
+                                                <Label Style="{StaticResource LabelBold}" Text="{Binding Title}"  ></Label>
+                                                <Label Style="{StaticResource LabelDim}"  Margin="0,-5,0,0" Text="{Binding Message }"  ></Label>
+                                            </StackLayout>
+
+                                            <Button 
+                                                Style="{StaticResource HomeActionButton}" 
+                                                IsTabStop="True" 
+                                                Text="{Binding ButtonText}" 
+                                                Clicked="CompanyUserMenuList_Clicked"
+                                                CommandParameter="{Binding MenuFor}"
+                                                BackgroundColor="{Binding ButtonColor}">
+                                            </Button>
+
+                                        </Grid>
+                                    <BoxView Style="{StaticResource ListviewDivider}"  Margin="30,-10,30,0"></BoxView>
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                <!--<StackLayout  x:Name="RecentTransactionStack"  HeightRequest="200" IsVisible="False" VerticalOptions="EndAndExpand" Margin="30,5,0,0">
+
+                        <Label  Style="{StaticResource LabelBold}"  FontFamily="MontserratSemiBold" FontSize="15" Margin="10,0,0,0" Text="Recent"  ></Label>
+                        <CollectionView VerticalOptions="EndAndExpand"
+                                             HorizontalOptions="FillAndExpand"
+                                             Margin="0,-5,0,0"
+                                             SelectionMode="None" 
+                                             x:Name="RecentTransactionList"     
+                                             ItemsSource="{Binding RecentTransactionList}"
+                                             ItemsLayout="HorizontalList">
+
+                            <CollectionView.ItemTemplate >
+                                <DataTemplate >
+              
+                                <StackLayout >
+                                    <Grid WidthRequest="325" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image
+                                                    Style="{StaticResource HomeActionImage}"
+                                                       VerticalOptions="Center"
+                                                       HeightRequest="30"
+                                                       Source="HomeRecentTransLocationIcon.png" >
+
+                                        </Image>
+
+                                        <StackLayout 
+                                                Style="{StaticResource HomeActionInformationRow}"
+                                                VerticalOptions="Center" >
+
+                                            <Label Style="{StaticResource LabelDim}"
+                                                           Margin="0,5,0,0" 
+                                                           Text="{Binding DocumentTypeName }" >
+                                            </Label>
+                                            <Label
+                                                        Style="{StaticResource LabelBold}"
+                                                        Margin="0,-5,0,0" 
+                                                        Text="{Binding RecipientOrSenderName}">
+                                            </Label>
+
+                                            <Label 
+                                                        Style="{StaticResource LabelDim}" 
+                                                        Margin="0,-5,0,0"
+                                                        Text="{Binding SendOrReceiveAddress }">
+
+                                            </Label>
+
+                                        </StackLayout>
+
+                                        <Button 
+                                                Style="{StaticResource HomeActionButton}" 
+                                                VerticalOptions="Center" 
+                                                Text="View" 
+                                                BackgroundColor="#CDB3D4" 
+                                                BorderColor="Gray"
+                                                TextColor="White" >
+                                        </Button>
+
+                                    </Grid>
+                                </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                    </StackLayout>-->
+
+                </StackLayout>
+
+
+
+
+
+
+        </StackLayout> 
+    </ContentPage.Content>
+</ContentPage>
